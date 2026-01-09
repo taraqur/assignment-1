@@ -1,0 +1,492 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+.navbar {
+  width: 100%;
+  padding: 1rem 5%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+
+
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #4D9264;
+}
+
+.btn-primary {
+  background-color: #4D9264;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #3e7550;
+}
+
+/* Hero Section */
+
+.hero-section {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  background: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.4)), 
+  url('images/hero-bg.png') no-repeat center center/cover;
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero-container {
+  max-width: 900px;
+  z-index: 2;
+}
+
+/* Early Access Badge */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(8px);
+}
+
+.status-dot {
+  height: 8px;
+  width: 8px;
+  background-color: #4D9264; /* Logo Green */
+  border-radius: 50%;
+  margin-right: 10px;
+  box-shadow: 0 0 10px #4D9264;
+}
+
+/* Typography */
+.hero-section h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem); /* Responsive font sizing */
+  font-weight: 770;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.text-green {
+  color: #4D9264;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 2.5rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-solid {
+  background-color: #4D9264;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+
+.btn-outline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: white;
+}
+
+.play-icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Container for the section */
+.notes-section {
+  background-color: #ffffff;
+  padding: 100px 0;
+  width: 1440px; /* Fixed width as requested */
+  margin: 0 auto;
+}
+
+.fixed-container {
+  width: 1200px; /* Internal content width */
+  margin: 0 auto;
+}
+
+/* Header Styling */
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header h2 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #001a33; /* Dark Navy from design */
+  margin-bottom: 20px;
+}
+
+.section-header p {
+  font-size: 18px;
+  color: #667085;
+}
+
+/* Grid of Cards */
+.cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Individual Card Styling */
+.info-card {
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid #f2f4f7;
+  border-radius: 12px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03); /* Subtle shadow */
+}
+
+/* Icon Styling */
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  background-color: #ff5f56; /* The specific red from your design */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px auto;
+}
+
+.icon-circle img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1); /* Makes icons white if they are dark images */
+}
+
+/* Card Typography */
+.info-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #001a33;
+  margin-bottom: 15px;
+}
+
+.info-card p {
+  font-size: 16px;
+  color: #667085;
+  line-height: 1.5;
+}
+
+/* Container Spacing */
+.second-brain {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 100px 0;
+  background-color: #ffffff;
+}
+
+.fixed-width-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.split-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* Image Side */
+.image-area {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.brain-graphic {
+  width: 580px; /* Precise sizing for knowledge.png */
+  height: auto;
+}
+
+/* Text Side */
+.text-area {
+  flex: 1;
+}
+
+.label-caps {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #4D9264; /* Brand Green */
+  letter-spacing: 1.2px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 44px;
+  font-weight: 800;
+  color: #001a33;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.main-para {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #667085;
+  margin-bottom: 32px;
+}
+
+/* Checklist Styling */
+.check-list {
+  list-style: none;
+  padding: 0;
+}
+
+.check-list li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 18px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  display: flex;
+  align-items: center;
+}
+
+/* Creating the Green Checkmark Circle */
+.check-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background-color: #4D9264; /* Brand Green */
+  border-radius: 50%;
+}
+
+/* The White Check inside the circle */
+.check-list li::after {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 6px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* EARLY ACCESS SECTION */
+.early-access-section {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.cta-card {
+    background-color: #F9F8F3; /* Specific off-white/beige background */
+    border-radius: 24px;
+    padding: 80px 40px;
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.cta-card h2 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #001a33; /* Dark Navy */
+    margin-bottom: 20px;
+}
+
+.cta-subtitle {
+    font-size: 18px;
+    color: #667085;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* Primary Button Styling */
+.btn-early-access {
+    display: inline-block;
+    background-color: #4D9264; /* Brand Green */
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 18px 40px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-early-access:hover {
+    background-color: #3e7550;
+}
+
+.cta-footer-text {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #98A2B3;
+    font-weight: 500;
+}
+
+.site-footer { 
+    background: #001a33; /* Deep navy from design */
+    color: #fff; 
+    padding: 100px 0 40px; 
+    width: 1440px; 
+    margin: 0 auto;
+}
+
+.footer-top { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; /* Aligned center for a cleaner look */
+    margin-bottom: 60px; 
+}
+
+.footer-logo-area { 
+    display: flex; 
+    align-items: center; 
+    gap: 16px; 
+}
+
+.footer-logo-area img { 
+    height: 52px; /* Slightly larger for better visibility */
+    transition: transform 0.3s ease;
+}
+
+.footer-logo-area:hover img {
+    transform: scale(1.05); /* Subtle interaction effect */
+}
+
+.socials p { 
+    font-size: 16px; 
+    font-weight: 700; 
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-align: right; 
+    margin-bottom: 20px; 
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.social-row { 
+    display: flex; 
+    gap: 12px; 
+    justify-content: flex-end;
+}
+
+.soc-icon { 
+    width: 40px; 
+    height: 40px; 
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    color: #fff; 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 16px; 
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.soc-icon:hover { 
+    background: #4D9264; 
+    border-color: #4D9264;
+    box-shadow: 0 10px 20px rgba(77, 146, 100, 0.3);
+}
+
+.divider { 
+    border: 0; 
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent); /* Faded edge divider */
+    margin-bottom: 40px; 
+}
+
+.copyright { 
+    text-align: center; 
+    color: rgba(255, 255, 255, 0.5); 
+    font-size: 14px; 
+    letter-spacing: 0.5px;
+}
