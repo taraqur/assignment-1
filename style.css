@@ -65,8 +65,6 @@
   background-color: #3e7550;
 }
 
-/* Hero Section */
-
 .hero-section {
   position: relative;
   min-height: 80vh;
@@ -85,7 +83,6 @@
   z-index: 2;
 }
 
-/* Early Access Badge */
 .status-badge {
   display: inline-flex;
   align-items: center;
@@ -101,15 +98,15 @@
 .status-dot {
   height: 8px;
   width: 8px;
-  background-color: #4D9264; /* Logo Green */
+  background-color: #4D9264; 
   border-radius: 50%;
   margin-right: 10px;
   box-shadow: 0 0 10px #4D9264;
 }
 
-/* Typography */
+
 .hero-section h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem); /* Responsive font sizing */
+  font-size: clamp(2.5rem, 5vw, 4rem); 
   font-weight: 770;
   line-height: 1.1;
   margin-bottom: 1.5rem;
@@ -130,7 +127,6 @@
   margin-right: auto;
 }
 
-/* Buttons */
 .button-group {
   display: flex;
   gap: 20px;
@@ -172,20 +168,19 @@
   height: 18px;
 }
 
-/* Container for the section */
 .notes-section {
   background-color: #ffffff;
   padding: 100px 0;
-  width: 1440px; /* Fixed width as requested */
+  width: 1440px; 
   margin: 0 auto;
 }
 
 .fixed-container {
-  width: 1200px; /* Internal content width */
+  width: 1200px; 
   margin: 0 auto;
 }
 
-/* Header Styling */
+
 .section-header {
   text-align: center;
   margin-bottom: 60px;
@@ -194,7 +189,7 @@
 .section-header h2 {
   font-size: 48px;
   font-weight: 800;
-  color: #001a33; /* Dark Navy from design */
+  color: #001a33;
   margin-bottom: 20px;
 }
 
@@ -203,14 +198,14 @@
   color: #667085;
 }
 
-/* Grid of Cards */
+
 .cards-wrapper {
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
 
-/* Individual Card Styling */
+
 .info-card {
   flex: 1;
   background: #ffffff;
@@ -218,15 +213,14 @@
   border-radius: 12px;
   padding: 40px 30px;
   text-align: center;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03); /* Subtle shadow */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03); 
 }
 
-/* Icon Styling */
+
 .icon-circle {
   width: 60px;
   height: 60px;
-  background-color: #ff5f56; /* The specific red from your design */
-  border-radius: 50%;
+  background-color: #ff5f56; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -236,10 +230,9 @@
 .icon-circle img {
   width: 30px;
   height: 30px;
-  filter: brightness(0) invert(1); /* Makes icons white if they are dark images */
+
 }
 
-/* Card Typography */
 .info-card h3 {
   font-size: 22px;
   font-weight: 700;
@@ -253,7 +246,6 @@
   line-height: 1.5;
 }
 
-/* Container Spacing */
 .second-brain {
   width: 1440px;
   margin: 0 auto;
@@ -273,7 +265,6 @@
   gap: 60px;
 }
 
-/* Image Side */
 .image-area {
   flex: 1;
   display: flex;
@@ -281,11 +272,11 @@
 }
 
 .brain-graphic {
-  width: 580px; /* Precise sizing for knowledge.png */
+  width: 580px; 
   height: auto;
 }
 
-/* Text Side */
+
 .text-area {
   flex: 1;
 }
@@ -294,7 +285,7 @@
   display: block;
   font-size: 14px;
   font-weight: 700;
-  color: #4D9264; /* Brand Green */
+  color: #4D9264; 
   letter-spacing: 1.2px;
   margin-bottom: 20px;
 }
@@ -314,7 +305,6 @@ h2 {
   margin-bottom: 32px;
 }
 
-/* Checklist Styling */
 .check-list {
   list-style: none;
   padding: 0;
@@ -331,18 +321,16 @@ h2 {
   align-items: center;
 }
 
-/* Creating the Green Checkmark Circle */
 .check-list li::before {
   content: '';
   position: absolute;
   left: 0;
   width: 22px;
   height: 22px;
-  background-color: #4D9264; /* Brand Green */
-  border-radius: 50%;
+  background-color: #4D9264;
 }
 
-/* The White Check inside the circle */
+
 .check-list li::after {
   content: '';
   position: absolute;
@@ -355,7 +343,6 @@ h2 {
   transform: rotate(45deg);
 }
 
-/* EARLY ACCESS SECTION */
 .early-access-section {
     width: 1440px;
     margin: 0 auto;
@@ -364,7 +351,7 @@ h2 {
 }
 
 .cta-card {
-    background-color: #F9F8F3; /* Specific off-white/beige background */
+    background-color: #F9F8F3; 
     border-radius: 24px;
     padding: 80px 40px;
     text-align: center;
@@ -375,21 +362,21 @@ h2 {
 .cta-card h2 {
     font-size: 48px;
     font-weight: 800;
-    color: #001a33; /* Dark Navy */
+    color: #001a33; 
     margin-bottom: 20px;
 }
 
 .cta-subtitle {
     font-size: 18px;
-    color: #667085;
+    color: #60687a;
     line-height: 1.6;
     margin-bottom: 40px;
 }
 
-/* Primary Button Styling */
+
 .btn-early-access {
     display: inline-block;
-    background-color: #4D9264; /* Brand Green */
+    background-color: #4D9264;
     color: #ffffff;
     text-decoration: none;
     font-size: 18px;
@@ -411,9 +398,9 @@ h2 {
 }
 
 .site-footer { 
-    background: #001a33; /* Deep navy from design */
+    background: #001a33; 
     color: #fff; 
-    padding: 100px 0 40px; 
+    padding: 120px 120px 30px 120px; 
     width: 1440px; 
     margin: 0 auto;
 }
@@ -421,7 +408,7 @@ h2 {
 .footer-top { 
     display: flex; 
     justify-content: space-between; 
-    align-items: center; /* Aligned center for a cleaner look */
+    align-items: center; 
     margin-bottom: 60px; 
 }
 
@@ -432,12 +419,8 @@ h2 {
 }
 
 .footer-logo-area img { 
-    height: 52px; /* Slightly larger for better visibility */
+    height: 52px; 
     transition: transform 0.3s ease;
-}
-
-.footer-logo-area:hover img {
-    transform: scale(1.05); /* Subtle interaction effect */
 }
 
 .socials p { 
@@ -447,7 +430,7 @@ h2 {
     letter-spacing: 1.5px;
     text-align: right; 
     margin-bottom: 20px; 
-    color: rgba(255, 255, 255, 0.9);
+    color: ffffff;
 }
 
 .social-row { 
@@ -459,34 +442,24 @@ h2 {
 .soc-icon { 
     width: 40px; 
     height: 40px; 
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-    color: #fff; 
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: #ffffff; 
+    color: #0e0d0d; 
     border-radius: 50%; 
     display: flex; 
     align-items: center; 
     justify-content: center; 
     font-size: 16px; 
     cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .soc-icon:hover { 
-    background: #4D9264; 
-    border-color: #4D9264;
-    box-shadow: 0 10px 20px rgba(77, 146, 100, 0.3);
-}
-
-.divider { 
-    border: 0; 
-    height: 1px;
-    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent); /* Faded edge divider */
-    margin-bottom: 40px; 
+    background: #30B868; 
+    border-color: #30B868;
 }
 
 .copyright { 
     text-align: center; 
-    color: rgba(255, 255, 255, 0.5); 
+    color: #FAFAFA
     font-size: 14px; 
     letter-spacing: 0.5px;
 }
